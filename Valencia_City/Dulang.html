@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Travel Blog</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="fsp.css">
+  <script src="dropdown.js"></script>
+
+  <style>
+    body {
+      background-image: url("kaamulan8.jpg");
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-size: cover;
+    }
+    
+    /* Sticky navigation bar */
+    .sticky {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      z-index: 1000;
+    }
+   
+  </style>
+</head> 
+<body>
+
+   <h1> Mt. Dulang-Dulang</h1>
+    <ul id="navbar">
+    <li><a href="index.html">Home</a></li>
+    <li>
+    <a href="#">Famous Spots</a>
+    <ul class ="dropdown">
+    <li><a href="LakeApo.html">Lake Apo</a></li>
+    <li><a href="Kitanglad.html">Mt. Kitanglad</a></li>
+    <li><a href="#">Mt. Dulang-Dulang</a></li>
+    </ul>
+    </li>
+    <li><a href="History.html">History</a></li>
+    <li><a href="AboutUS.html">About Us</a></li>
+    <li><a href="Location.html">Food and Dining</a></li>
+  </ul>
+ 
+  <div class="slideshow-container">
+
+    <div class="mySlides fade">
+      <div class="numbertext"></div>
+      <img src="dsc04571.webp" style="width:100%">
+     
+    </div>
+    
+    <div class="mySlides fade">
+      <div class="numbertext"></div>
+      <img src="dsc04557-e1441691711989.webp" style="width:100%">
+      
+    </div>
+    
+    <div class="mySlides fade">
+      <div class="numbertext"></div>
+      <img src="dulang3.jpg" style="width:100%">
+     
+    </div>
+    
+    <a class="prev" onclick="plusSlides(-1)">❮</a>
+    <a class="next" onclick="plusSlides(1)">❯</a>
+    
+    </div>
+    <br>
+    
+    <div style="text-align:center">
+      <span class="dot" onclick="currentSlide(1)"></span> 
+      <span class="dot" onclick="currentSlide(2)"></span> 
+      <span class="dot" onclick="currentSlide(3)"></span> 
+    </div>
+    <div class="frame">
+       
+                                                        <h2>Mt. Dulang-Dulang</h2> 
+        <p> Mount Dulang-dulang, dubbed by Filipino mountaineers as "D2", is one of the highest elevation peaks in the Kitanglad Mountain Range, located in the north central portion of the province of Bukidnon in the island of Mindanao. It is the second highest mountain of the Philippines at 2,938 metres (9,639 ft) above sea level, second only to Mount Apo of Davao at 2,954 m (9,692 ft) and slightly higher than Mount Pulag of Luzon, the third highest at 2,922 m (9,587 ft).Mount Dulang-dulang, similar to other peaks located in the Kitanglad Mountain Range, is covered by lofty forests and is a home to a variety of fauna and flora. It is home to 58 mammal species including bats, squirrels, monkeys, wild boars, flying lemurs, shrews, and deer. The Philippine Eagle is also sighted within the vicinity of the mountain. The mountain is regarded by the Talaandig tribe of Lantapan as a sacred place. It is also within the ancestral domain of the tribe. </p> <br>
+         
+    
+    
+            
+      </div>
+
+
+    <script>
+      // Get the navbar
+      var navbar = document.getElementById("navbar");
+  
+      // Get the offset position of the navbar
+      var sticky = navbar.offsetTop + navbar.offsetHeight;
+  
+      // Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
+      function stickyNavbar() {
+        if (window.pageYOffset >= sticky) {
+          navbar.classList.add("sticky");
+          document.body.style.paddingTop = navbar.offsetHeight + "px"; // Add padding to body to prevent content from overlapping navbar
+        } else {
+          navbar.classList.remove("sticky");
+          document.body.style.paddingTop = 0; // Remove padding when navbar is not sticky
+        }
+      }
+  
+      // When the user scrolls the page, execute stickyNavbar
+      window.onscroll = function() {stickyNavbar()};
+    </script>
+  
+
+</body>
+</html>

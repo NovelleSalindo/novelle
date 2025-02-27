@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Travel Blog</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="frame.css">
+ 
+ 
+
+  <style>
+    body {
+      background-image: url("kaamulan8.jpg");
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-size: cover;
+    }
+    
+  /* Sticky navigation bar */
+  .sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+  }
+ 
+  </style>
+</head> 
+<body>
+
+   <h1> History of  Valencia City</h1>
+  <ul id="navbar" class>
+    <li><a href="index.html">Home</a></li>
+    <li>
+    <a href="#">Famous Spots</a>
+    <ul class ="dropdown">
+    <li><a href="LakeApo.html">Lake Apo</a></li>
+    <li><a href="Kitanglad.html">Mt. Kitanglad</a></li>
+    <li><a href="Dulang.html">Mt. Dulang-Dulang</a></li>
+    </ul>
+    </li>
+    <li><a href="History.html">History</a></li>
+    <li><a href="AboutUS.html">About Us</a></li>
+    <li><a href="LakeApo.html">Food and Dining</a></li>
+  </ul>
+   <br>
+  <div class="frame">
+    <img src="Snapinsta.app_17438239_473833526341311_3181724417260519424_n_1080.webp"><br>
+                <h2> Origins</h2> <br>
+    <p> The territory that now comprises the city of Valencia is combined from thirteen barangays of Malaybalay.
+      The earliest inhabitants in the area, presently comprising part of the Poblacion, were Bukidnon 
+      natives who founded a settlement along the banks of Pulangi River and the confluence of the Dumanggas River.
+       The pioneers were led by Darwin Dumanggas Manangkila together with the families of the Binalhays, Laugas, Dongogans, 
+       Gua-ans, Lanayans, and the Arenzos. The first site of the settlement was a sitio named "Panglibatuhan" because the area was thickly forested by tree species called by the natives as "Malibato trees". In 1911, a one-room barrio school was opened, and its first teacher was the late Leon Galorport. The school site is approximately the present location of the Poblacion Barangay High School. Galorport, who came from his hometown, Valencia, Bohol named the school "Valencia School". When the sitio became a barrio of Malaybalay, the residents agreed to name it "Valencia". Finally, when the southern portion of Malaybalay was separated as a new municipality, the petitioners agreed to name the municipality as "Valencia". However, the use of the name "Valencia" is already seen in Spanish documents in 1893 or even earlier which places it under the jurisdiction of Linabo or Sevilla (now Mailag) in the Province of Misamis.[7][8] The rich natural resources found in the territory eventually attracted Christian settlers from the highly populated coastal areas of Mindanao, Visayas and Luzon islands. </p> <br>
+     
+
+
+        
+  </div>
+  <script>
+    // Get the navbar
+    var navbar = document.getElementById("navbar");
+
+    // Get the offset position of the navbar
+    var sticky = navbar.offsetTop + navbar.offsetHeight;
+
+    // Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
+    function stickyNavbar() {
+      if (window.pageYOffset >= sticky) {
+        navbar.classList.add("sticky");
+        document.body.style.paddingTop = navbar.offsetHeight + "px"; // Add padding to body to prevent content from overlapping navbar
+      } else {
+        navbar.classList.remove("sticky");
+        document.body.style.paddingTop = 0; // Remove padding when navbar is not sticky
+      }
+    }
+
+    // When the user scrolls the page, execute stickyNavbar
+    window.onscroll = function() {stickyNavbar()};
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Travel Blog</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="fsp.css">
+  <script src="dropdown.js"></script>
+
+  <style>
+    body {
+      background-image: url("kaamulan8.jpg");
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-size: cover;
+    }
+    
+    /* Sticky navigation bar */
+    .sticky {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      z-index: 1000;
+    }
+   
+  </style>
+</head> 
+<body>
+
+   <h1>Lake Apo</h1>
+    <ul id="navbar">
+    <li><a href="index.html">Home</a></li>
+    <li>
+    <a href="#">Famous Spots</a>
+    <ul class ="dropdown">
+    <li><a href="#">Lake Apo</a></li>
+    <li><a href="Kitanglad.html">Mt. Kitanglad</a></li>
+    <li><a href="Dulang.html">Mt. Dulang-Dulangk</a></li>
+    </ul>
+    </li>
+    <li><a href="History.html">History</a></li>
+    <li><a href="AboutUS.html">About Us</a></li>
+    <li><a href="Location.html">Food and Dining</a></li>
+  </ul>
+ 
+  <div class="slideshow-container">
+
+    <div class="mySlides fade">
+      <div class="numbertext"></div>
+      <img src="c:\Users\Novelle Salindo\Downloads\Bantilan\Midterm\MidtermWeb\Valencia_City\Lake-Apo-Valencia-Copyright-to-Project-LUPAD-11-1024x576.webp" style="width:100%">
+     
+    </div>
+    
+    <div class="mySlides fade">
+      <div class="numbertext"></div>
+      <img src="0d4bf82b56e966de70aaff8366e02c51.jpg" style="width:100%">
+      
+    </div>
+    
+    <div class="mySlides fade">
+      <div class="numbertext"></div>
+      <img src="lakeapo3.jpg" style="width:100%">
+     
+    </div>
+    
+    <a class="prev" onclick="plusSlides(-1)">❮</a>
+    <a class="next" onclick="plusSlides(1)">❯</a>
+    
+    </div>
+    <br>
+    
+    <div style="text-align:center">
+      <span class="dot" onclick="currentSlide(1)"></span> 
+      <span class="dot" onclick="currentSlide(2)"></span> 
+      <span class="dot" onclick="currentSlide(3)"></span> 
+    </div>
+    <div class="frame">
+       
+                                                        <h2>Lake Apo</h2> 
+        <p> Lake Apo is a crater lake in Barangay Guinoyoran in the City of Valencia in Bukidnon province in the southern Philippines. It is located in a hilly area about 640 metres (2,100 ft) in elevation, about 11 kilometres (6.8 mi) WSW of the city poblacion (town center). Lake Apo was awarded the cleanest inland body of water in Northern Mindanao Region (Region X) in the late 1990s. The green body of water has an estimated area of 24 hectares (59 acres) with maximum depths reaching up to 26 m (85 ft). </p> <br>
+         
+    
+    
+            
+      </div>
+
+
+    <script>
+      // Get the navbar
+      var navbar = document.getElementById("navbar");
+  
+      // Get the offset position of the navbar
+      var sticky = navbar.offsetTop + navbar.offsetHeight;
+  
+      // Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
+      function stickyNavbar() {
+        if (window.pageYOffset >= sticky) {
+          navbar.classList.add("sticky");
+          document.body.style.paddingTop = navbar.offsetHeight + "px"; // Add padding to body to prevent content from overlapping navbar
+        } else {
+          navbar.classList.remove("sticky");
+          document.body.style.paddingTop = 0; // Remove padding when navbar is not sticky
+        }
+      }
+  
+      // When the user scrolls the page, execute stickyNavbar
+      window.onscroll = function() {stickyNavbar()};
+    </script>
+  
+
+</body>
+</html>
